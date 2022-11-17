@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var pembeli = [
+            
+        //     {
+        //         Nama : "saepudin",
+        //         barang : [{
+        //             nama : ["permen lolipop", "ayam bakar"],
+        //             harga : 3000,
+        //             jumlah : 4,
+        //         }]
+        //     },
+        //     {
+        //         Nama : "dani kasep",
+        //         barang :[{
+        //             nama : ["lauk hayam", "lauk megalodon"],
+        //             harga : 20000,
+        //             jumlah : 2,
+        //         }]
+
+        //     }
+        // ]
+        // pembeli.forEach(produk =>{
+        //     document.write("nama : " + produk.Nama + '<br />')
+        //     produk.barang.forEach(item =>{
+        //     document.write(`barang : ${item.nama}` + '<br />')
+        //     document.write("harga : " + item.barang.harga + '<br />')
+        //     document.write("jumlah : " + item.barang.jumlah + '<br />')
+        // })
+        //     document.write('<hr/>')
+        // })
+
+        var pembeli =[
+            {
+                nama : "jamal",
+                barang : [
+                    {nama : "kopi", harga : 20000, jumlah : 1},
+                    {nama : "apartemen", harga : 300000, jumlah : 2}
+                ]
+            },
+            {
+                nama : "jamaludin",
+                barang : [
+                {nama : "motor", harga : 1500000, jumlah : 1},
+                {nama : "ferari", harga : 34560000, jumlah : 12,}
+                ]
+            }
+        ]
+        pembeli.forEach(p =>{
+            document.write(`nama : ${p.nama}` + '<br />')
+            p.barang.forEach(barang => {
+                document.write(`barang : ${barang.nama}` + '<br />')
+                document.write(`harga : ${barang.harga}` + '<br />')
+                document.write(`jumlah : ${barang.jumlah}` + '<br />')
+            })
+            document.write('<hr />')
+        })
+
+        
+    </script>
+</body>
+</html>
